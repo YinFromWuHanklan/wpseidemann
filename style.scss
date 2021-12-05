@@ -13,9 +13,20 @@ h2 {
     color: $primary-color;
     text-transform: uppercase;
 }
+h3 {
+    font-size: 20px;
+}
 
 p {
     font-family: "Open Sans", sans-serif;
+}
+
+ul {
+    padding-left: 20px;
+    li {
+        margin-top: 15px;
+        line-height: 1.2em;
+    }
 }
 
 // Header intro
@@ -28,12 +39,9 @@ p {
 section {
     &#services{
         background-color: $primary-color;
+        color: #FFF;
         h2 {
             color: #FFF;
-        }
-        .service-box {
-            background-color: #FFF;
-            color: #555;
         }
     }
 }

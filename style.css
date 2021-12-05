@@ -6,8 +6,20 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: 20px;
+}
+
 p {
   font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  padding-left: 20px;
+}
+ul li {
+  margin-top: 15px;
+  line-height: 1.2em;
 }
 
 .header img {
@@ -16,13 +28,10 @@ p {
 
 section#services {
   background-color: #014995;
+  color: #FFF;
 }
 section#services h2 {
   color: #FFF;
-}
-section#services .service-box {
-  background-color: #FFF;
-  color: #555;
 }
 
 .contact-img {
