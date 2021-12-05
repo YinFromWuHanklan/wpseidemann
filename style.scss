@@ -5,10 +5,20 @@ $highlighting-color: #EB7F00;
 $grey-color: #d3d3d3;
 
 
-body {
+// Fonts
+h1, 
+h2 {
     font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: $primary-color;
+    text-transform: uppercase;
 }
 
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+// Header intro
 .header {
     img {
         width: 100%;
@@ -16,10 +26,19 @@ body {
 }
 
 section {
-    &#ueber-uns {
-        background-color: $secondary-color;
+    &#services{
+        background-color: $primary-color;
+        h2 {
+            color: #FFF;
+        }
+        .service-box {
+            background-color: #FFF;
+            color: #555;
+        }
     }
 }
+
+
 .contact-img {
     width: 100%;
 }
