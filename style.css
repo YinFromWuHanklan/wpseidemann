@@ -2,7 +2,15 @@ body {
   font-family: "Playfair Display", serif;
 }
 
-header img {
+.header img {
+  width: 100%;
+}
+
+section#ueber-uns {
+  background-color: #0F70B7;
+}
+
+.contact-img {
   width: 100%;
 }
 

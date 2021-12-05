@@ -1,9 +1,25 @@
+// Variables
+$primary-color: #014995;
+$secondary-color: #0F70B7;
+$highlighting-color: #EB7F00;
+$grey-color: #d3d3d3;
+
+
 body {
     font-family: "Playfair Display", serif;
 }
 
-header {
-img {
-    width: 100%;
+.header {
+    img {
+        width: 100%;
+    }
 }
+
+section {
+    &#ueber-uns {
+        background-color: $secondary-color;
+    }
+}
+.contact-img {
+    width: 100%;
 }
