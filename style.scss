@@ -4,6 +4,7 @@ $secondary-color: #0F70B7;
 $highlighting-color: #EB7F00;
 $grey-color: #d3d3d3;
 
+$transition-collapse: height .35s ease;
 
 // Fonts
 h1, 
@@ -50,3 +51,17 @@ section {
 .contact-img {
     width: 100%;
 }
+
+
+
+.collapse {
+    &:not(.show) {
+      display: none;
+    }
+  }
+  
+  .collapsing {
+    height: 0;
+    overflow: hidden;
+    @include transition($transition-collapse);
+  }

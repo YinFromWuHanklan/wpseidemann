@@ -1,41 +1,17 @@
-h1,
-h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  color: #014995;
-  text-transform: uppercase;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 66 |     @include transition($transition-collapse);
+ *    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   style.scss 66:5  root stylesheet */
 
-h3 {
-  font-size: 20px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 66 \2502      @include transition($transition-collapse);\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   style.scss 66:5  root stylesheet";
 }
-
-p {
-  font-family: "Open Sans", sans-serif;
-}
-
-ul {
-  padding-left: 20px;
-}
-ul li {
-  margin-top: 15px;
-  line-height: 1.2em;
-}
-
-.header img {
-  width: 100%;
-}
-
-section#services {
-  background-color: #014995;
-  color: #FFF;
-}
-section#services h2 {
-  color: #FFF;
-}
-
-.contact-img {
-  width: 100%;
-}
-
-/*# sourceMappingURL=style.css.map */
