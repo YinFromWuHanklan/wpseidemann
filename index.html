@@ -46,97 +46,61 @@
     <section id="services">
         <div class="container p-5">
             <h2 class="text-center">Services</h2>
-
-
-
-            <h2>Accordion with symbols</h2>
-            <p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign is replaced with a "minus" sign.</p>
-            <button class="accordion">Section 1</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            
-            <button class="accordion">Section 2</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            
-            <button class="accordion">Section 3</button>
-            <div class="panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-
-
-
-
-
-                <div class="accordion row" id="accordionExample">
-                    <div class="accordion-item col-md-4">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <i class="fa fa fa-search fa-3x"></i>
-                            a. Audit
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Jahresabschlussprüfungen (HGB – IFRS)</li>
-                                <li>Konzernabschlussprüfungen (HGB – IFRS)</li>
-                                <li>Prüferische Durchsicht von Abschlüssen</li>
-                                <li>Vereinbarten Untersuchungshandlungen (Agreed Upon Procedures)</li>
-                                <li>Sonderprüfungen (u.a. Gründungsprüfung und Nachgründungsprüfung für AG und SE, Umwandlungsprüfung, Sachkapitalerhöhungsprüfung, Werthaltigkeitsbescheinigung)</li>
-                            </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item col-md-4">
-                      <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <i class="fa fa fa-check fa-3x"></i>
-                            b. Valuation &amp; Transaction Services
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Unternehmensbewertung nach IDW S 1</li>
-                                <li>Bewertung von kleine und mittlere Unternehmen</li>
-                                <li>Bewertung von einzelnen Vermögenswerten</li>
-                                <li>Indikative Wertermittlungen</li>
-                                <li>Financial Due Diligence</li>
-                                <li>Purchase Price Allocation (PPA)</li>
-                            </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item col-md-4">
-                      <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <i class="fa fa fa-check fa-3x"></i>
-                            <h3 class="mt-3">c. Accounting Consulting</h3><br>
-                        </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Interimsweis Übernahme von Funktionen in der Rechnungslegung und Internen Revision</li>
-                                <li>Unterstützung bei der Erarbeitung von Bilanzierungsgutachten und -richtlinien</li>
-                                <li>Erstellung eines Business Plans</li>
-                                <li>Erstellung einer integrierten Unternehmensplanung</li>
-                                <li>Rechnungslegungsfragen nach HGB und IFRS</li>
-                            </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-
-
-
-
-
             <div class="row">
+                <div class="col-md-4">
+                    <button class="accordion">
+                        <div class="text-center">
+                            <i class="fa fa fa-search fa-3x"></i>
+                            <h3 class="mt-3">a. Audit</h3><br>
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <ul>
+                            <li>Jahresabschlussprüfungen (HGB – IFRS)</li>
+                            <li>Konzernabschlussprüfungen (HGB – IFRS)</li>
+                            <li>Prüferische Durchsicht von Abschlüssen</li>
+                            <li>Vereinbarten Untersuchungshandlungen (Agreed Upon Procedures)</li>
+                            <li>Sonderprüfungen (u.a. Gründungsprüfung und Nachgründungsprüfung für AG und SE, Umwandlungsprüfung, Sachkapitalerhöhungsprüfung, Werthaltigkeitsbescheinigung)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <button class="accordion">                    
+                        <div class="text-center">
+                            <i class="fa fa fa-check fa-3x"></i>
+                            <h3 class="mt-3">b. Valuation &amp; Transaction Services</h3>
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <ul>
+                            <li>Unternehmensbewertung nach IDW S 1</li>
+                            <li>Bewertung von kleine und mittlere Unternehmen</li>
+                            <li>Bewertung von einzelnen Vermögenswerten</li>
+                            <li>Indikative Wertermittlungen</li>
+                            <li>Financial Due Diligence</li>
+                            <li>Purchase Price Allocation (PPA)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <button class="accordion">
+                        <div class="text-center">
+                            <i class="fa fa fa-chart-line fa-3x"></i>
+                            <h3 class="mt-3">c. Accounting Consulting</h3><br>
+                        </div>
+                    </button>
+                    <div class="panel">
+                        <ul>
+                            <li>Interimsweis Übernahme von Funktionen in der Rechnungslegung und Internen Revision</li>
+                            <li>Unterstützung bei der Erarbeitung von Bilanzierungsgutachten und -richtlinien</li>
+                            <li>Erstellung eines Business Plans</li>
+                            <li>Erstellung einer integrierten Unternehmensplanung</li>
+                            <li>Rechnungslegungsfragen nach HGB und IFRS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
                 <div class="col-md-4 service-box p-4">
                     <div class="text-center">
                         <i class="fa fa fa-search fa-3x"></i>
@@ -177,7 +141,7 @@
                         <li>Rechnungslegungsfragen nach HGB und IFRS</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <section id="ueber-uns">
