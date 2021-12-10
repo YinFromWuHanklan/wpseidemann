@@ -40,12 +40,12 @@ section#services h2 {
 }
 
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #014995;
+  color: #FFF;
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border: none;
+  border: 2px solid #FFF;
   text-align: left;
   outline: none;
   font-size: 15px;
@@ -59,7 +59,7 @@ section#services h2 {
 
 .accordion:after {
   content: "+";
-  color: #777;
+  color: #FFF;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -71,7 +71,7 @@ section#services h2 {
 
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: #014995;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
