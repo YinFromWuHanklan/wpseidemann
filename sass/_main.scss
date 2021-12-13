@@ -9,22 +9,11 @@ $grey-color: #d3d3d3;
     padding-top: 60px;
 }
 
-// body {
-// background: url(../images/header.jpg);
-//    background-size: 100%;
-//    background-repeat: no-repeat;
-//    background-attachment: fixed;
-// }
-
-.header
-
-.header::before {
-    content: "";
-    background-image: url("../images/header.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: absolute;
+body {
+background: url(../images/header.jpg);
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
 }
 
 // Fonts

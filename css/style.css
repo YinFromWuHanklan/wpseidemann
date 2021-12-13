@@ -3,13 +3,11 @@
   padding-top: 60px;
 }
 
-.header .header::before {
-  content: "";
-  background-image: url("../images/header.jpg");
+body {
+  background: url(../images/header.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: absolute;
 }
 
 h1,
