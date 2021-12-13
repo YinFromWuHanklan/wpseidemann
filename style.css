@@ -1,10 +1,29 @@
 @charset "UTF-8";
+.pt-60 {
+  padding-top: 60px;
+}
+
+body {
+  background: url(images/header.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 h1,
 h2 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  color: #014995;
   text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: #FFF;
+}
+
+h2 {
+  color: #014995;
 }
 
 h3 {
@@ -24,8 +43,10 @@ ul li {
   line-height: 1.4em;
 }
 
-.header img {
-  width: 100%;
+.header span {
+  font-family: "Playfair Display", serif;
+  color: #FFF;
+  font-size: 3em;
 }
 
 section#services {

@@ -4,6 +4,17 @@ $secondary-color: #0F70B7;
 $highlighting-color: #EB7F00;
 $grey-color: #d3d3d3;
 
+// Helpers
+.pt-60 {
+    padding-top: 60px;
+}
+
+body {
+background: url(images/header.jpg);
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
 
 // Fonts
 
@@ -11,8 +22,14 @@ h1,
 h2 {
     font-family: "Playfair Display", serif;
     font-weight: 700;
-    color: $primary-color;
     text-transform: uppercase;
+}
+h1 {
+    font-size: 1.5em;
+    color: #FFF;
+}
+h2 {
+    color: $primary-color;
 }
 h3 {
     font-size: 20px;
@@ -33,8 +50,10 @@ ul {
 
 // Header intro
 .header {
-    img {
-        width: 100%;
+    span {
+        font-family: "Playfair Display", serif;
+        color: #FFF;
+        font-size: 3em;
     }
 }
 
