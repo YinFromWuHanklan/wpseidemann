@@ -8,7 +8,8 @@ html {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -26,11 +27,11 @@ h1 {
 }
 
 h2 {
-  color: #014995;
+  color: #013061;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 li,
@@ -59,6 +60,8 @@ ul li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
+  animation: showup 3s;
 }
 .header .header-text span {
   font-family: "Playfair Display", serif;
@@ -70,14 +73,21 @@ ul li {
   }
 }
 
-section#services {
-  background-color: #014995;
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+section#services1, section#services2 {
+  background-color: #013061;
   color: #FFF;
 }
-section#services h2 {
+section#services1 h2, section#services2 h2 {
   color: #FFF;
 }
-
 .contact-img {
   width: 100%;
 }

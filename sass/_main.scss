@@ -1,5 +1,5 @@
 // Variables
-$primary-color: #014995;
+$primary-color: #013061;  // old color: #014995
 $secondary-color: #0F70B7;
 $highlighting-color: #EB7F00;
 $grey-color: #d3d3d3;
@@ -17,7 +17,8 @@ html {
 // Fonts
 
 h1, 
-h2 {
+h2,
+h3 {
     font-family: "Playfair Display", serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -34,7 +35,7 @@ h2 {
     color: $primary-color;
 }
 h3 {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 li,
@@ -64,6 +65,8 @@ ul {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        overflow: hidden;
+        animation: showup 3s;
         span {
             font-family: "Playfair Display", serif;
             font-size: 3.5em;
@@ -74,14 +77,26 @@ ul {
     }
 }
 
+@keyframes showup {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
 
 section {
-    &#services{
+    &#services1,
+    &#services2 {
         background-color: $primary-color;
         color: #FFF;
         h2 {
             color: #FFF;
         }
+    }
+    &#services1 {
+
+    }
+    &#services2 {
+
     }
 }
 
