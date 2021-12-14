@@ -9,12 +9,12 @@ $grey-color: #d3d3d3;
     padding-top: 60px;
 }
 
-body {
-background: url(../images/header.jpg);
-   background-size: 100%;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-}
+// body {
+// background: url(../images/header.jpg);
+//    background-size: 100%;
+//    background-repeat: no-repeat;
+//    background-attachment: fixed;
+// }
 
 // Fonts
 
@@ -28,7 +28,8 @@ h1 {
     font-size: 1.5em;
     color: #FFF;
     @include for-phone-only {
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 1.5em;
     }
 }
 h2 {
@@ -52,13 +53,29 @@ ul {
 }
 
 // Header intro
+
 .header {
-    span {
-        font-family: "Playfair Display", serif;
-        color: #FFF;
-        font-size: 3em;
+    position: relative;
+    text-align: center;
+    color: white;
+    img {
+        filter: brightness(80%);
+    }
+    .header-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        span {
+            font-family: "Playfair Display", serif;
+            font-size: 3.5em;
+            @include for-phone-only {
+                font-size: 24px;
+            }
+        }
     }
 }
+
 
 section {
     &#services{
@@ -73,6 +90,11 @@ section {
 
 .contact-img {
     width: 100%;
+}
+
+
+footer {
+    background-color: #888;
 }
 
 // accordion

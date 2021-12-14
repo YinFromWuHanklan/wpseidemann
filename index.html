@@ -19,6 +19,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <a class="navbar-brand" href="index.html">
+            <!-- ToDo: Logo -->
             <img src="images/logo-navbar.png" alt="Seidemann Wirtschaftsprüfung" width="90" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -40,14 +41,22 @@
             </ul>
         </div>
     </nav>
-    <div class="container header text-center d-md-none d-sm-block pt-60 pb-5">
-            <span>Wissen. Schafft. Vertrauen.</span>
-            <h1 class="pt-4 pb-4">Seidemann Wirtschaftsprüfung</h1>
+
+    <div class="container-fluid header text-center d-md-none d-sm-block pl-0 pr-0">
+        <img src="images/header.jpg" alt="" class="w-100">
+        <div class="header-text">
+            <span class="pt-4">Wissen.&nbsp;Schafft.&nbsp;Vertrauen.</span>
+            <h1 class="pt-4">Seidemann Wirtschaftsprüfung</h1>
+        </div>
     </div>
-    <div class="container header text-center d-sm-none d-md-block pt-60 pb-5">
+    <div class="container-fluid header text-center d-none d-md-block pl-0 pr-0">
+        <img src="images/header.jpg" alt="" class="w-100">
+        <div class="header-text">
             <span>Wissen.<br/>Schafft.<br/>Vertrauen.</span>
             <h1 class="pt-4 pb-4">Seidemann Wirtschaftsprüfung</h1>
+        </div>
     </div>
+
     <section id="services">
         <div class="container p-5">
             <h2 class="text-center">Services</h2>
@@ -188,9 +197,12 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="copyright">
-            &copy; Seidemann Wirtschaftsprüfung | <a href="impressum.html" title="Impressum">Impressum</a> | <a href="datenschutz.html" title="Datenschutz">Datenschutz</a>
+    <footer class="text-center p-3">
+        <div class="copyright d-md-none d-sm-block">
+            &copy; 2021 Seidemann Wirtschaftsprüfung<br /><a href="impressum.html" title="Impressum">Impressum</a><br /><a href="datenschutz.html" title="Datenschutz">Datenschutz</a>
+        </div>
+        <div class="copyright d-none d-md-block">
+            &copy; 2021 Seidemann Wirtschaftsprüfung | <a href="impressum.html" title="Impressum">Impressum</a> | <a href="datenschutz.html" title="Datenschutz">Datenschutz</a>
         </div>
     </footer>
 
