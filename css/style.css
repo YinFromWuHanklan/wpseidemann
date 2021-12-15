@@ -91,9 +91,27 @@ section#services1 h2, section#services2 h2 {
 .contact-img {
   width: 100%;
 }
+@media (max-width: 599px) {
+  .contact-img {
+    width: 60%;
+  }
+}
 
 footer {
-  background-color: #888;
+  background-color: #013061;
+  color: #fff;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer a:hover {
+  color: #EB7F00;
+}
+@media (max-width: 599px) {
+  footer a {
+    line-height: 3em;
+  }
 }
 
 button {
@@ -142,12 +160,30 @@ button {
   background-color: #EB7F00;
   color: #FFF;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 .cta-button:hover {
   text-decoration: none;
   background-color: #ffa439;
   color: #FFF;
+}
+
+hr {
+  border-top: 1px solid #666;
+}
+
+section#ueber-uns {
+  color: #666;
+}
+section#ueber-uns h2 {
+  color: #666;
+}
+section#kontakt {
+  background-color: #666;
+  color: #fff;
+}
+section#kontakt h2 {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
