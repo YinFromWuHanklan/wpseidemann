@@ -159,10 +159,27 @@ button {
     background-color: $highlighting-color;
     color: #FFF;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     &:hover {
         text-decoration: none;
         background-color: lighten($highlighting-color, 15%);
         color: #FFF;
     }
+}
+
+
+// parallax
+
+.parallax {
+        /* The image used */
+    background-image: url("img_parallax.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
