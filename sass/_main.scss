@@ -249,24 +249,17 @@ section {
 // parallax
 
 .parallax {
-        /* The image used */
-    // @include for-phone-only {
-    //     background-image: url("../images/seidemann-do-something-great_mobile2.jpg");
-    //     background-size: auto;
-    //     height: 300px;
-    // }
-    @include for-phone-only {
-        background-image: url("../images/seidemann-ueber-uns_mobile.jpg");
-        height: 400px;
+    @include for-tablet-portrait-up {
+        background-image: url("../images/seidemann-ueber-uns.jpg");
+
+        /* Set a specific height */
+        height: 500px; 
+    
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
     }
-    background-image: url("../images/seidemann-ueber-uns.jpg");
-
-    /* Set a specific height */
-    height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
