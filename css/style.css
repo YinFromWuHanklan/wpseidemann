@@ -224,21 +224,16 @@ section#kontakt a:hover {
   color: #EB7F00;
 }
 
-.parallax {
-  /* The image used */
-  background-image: url("../images/seidemann-ueber-uns.jpg");
-  /* Set a specific height */
-  height: 500px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (max-width: 599px) {
+@media (min-width: 600px) {
   .parallax {
-    background-image: url("../images/seidemann-ueber-uns_mobile.jpg");
-    height: 400px;
+    background-image: url("../images/seidemann-ueber-uns.jpg");
+    /* Set a specific height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
