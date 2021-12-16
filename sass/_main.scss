@@ -255,6 +255,10 @@ section {
     //     background-size: auto;
     //     height: 300px;
     // }
+    @include for-phone-only {
+        background-image: url("../images/seidemann-ueber-uns_mobile.jpg");
+        height: 400px;
+    }
     background-image: url("../images/seidemann-ueber-uns.jpg");
 
     /* Set a specific height */

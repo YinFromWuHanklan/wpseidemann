@@ -235,5 +235,11 @@ section#kontakt a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 599px) {
+  .parallax {
+    background-image: url("../images/seidemann-ueber-uns_mobile.jpg");
+    height: 400px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
