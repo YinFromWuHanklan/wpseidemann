@@ -1,3 +1,239 @@
-body {
-    font-family: "Playfair Display", serif;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap");
+.pt-60 {
+  padding-top: 60px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: #FFF;
+}
+@media (max-width: 599px) {
+  h1 {
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+}
+
+.legal h1 {
+  color: #013061;
+}
+.legal h3 {
+  margin-top: 40px;
+}
+
+h2 {
+  color: #013061;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+li,
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  padding-left: 20px;
+}
+ul li {
+  margin-top: 15px;
+  line-height: 1.4em;
+}
+
+.navbar {
+  margin-top: -70px;
+  background-color: #013061;
+  border-bottom: 1px solid #666;
+}
+.navbar.no-hero {
+  margin-top: 0;
+}
+@media (max-width: 599px) {
+  .navbar {
+    margin-top: 0;
+  }
+}
+.navbar button.navbar-toggler-icon {
+  color: #fff;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.header img {
+  filter: brightness(80%);
+}
+.header .header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  animation: showup 3s;
+}
+.header .header-text span {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5em;
+}
+@media (max-width: 599px) {
+  .header .header-text span {
+    font-size: 24px;
+  }
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.contact-img {
+  width: 100%;
+}
+@media (max-width: 599px) {
+  .contact-img {
+    width: 60%;
+  }
+}
+
+footer {
+  background-color: #013061;
+  color: #fff;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer a:hover {
+  color: #EB7F00;
+}
+@media (max-width: 599px) {
+  footer a {
+    line-height: 3em;
+  }
+}
+
+button {
+  border: none;
+}
+
+.accordion-service {
+  background-color: #0F70B7;
+  color: #FFF;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active-service,
+.accordion-service:hover {
+  background-color: #0F70B7;
+}
+
+.accordion-service:after {
+  content: "+";
+  color: #FFF;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active-service:after {
+  content: "−";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #0F70B7;
+  color: #FFF;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.cta-button {
+  background-color: #EB7F00;
+  color: #FFF;
+  padding: 20px;
+  border-radius: 15px;
+}
+.cta-button:hover {
+  text-decoration: none;
+  box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.25);
+  color: #FFF !important;
+}
+
+hr {
+  border-top: 1px solid #666;
+}
+
+section#services1, section#services2 {
+  background-color: #013061;
+  color: #FFF;
+}
+section#services1 h2, section#services2 h2 {
+  color: #FFF;
+}
+section#services2 hr {
+  border-top: 1px solid #fff !important;
+}
+section#ueber-uns {
+  background-color: #fff;
+  color: #666;
+}
+section#ueber-uns h2 {
+  color: #666;
+}
+section#kontakt {
+  background-color: #666;
+  color: #fff;
+}
+section#kontakt h2 {
+  color: #fff;
+}
+section#kontakt a {
+  color: #fff;
+}
+section#kontakt a:hover {
+  color: #EB7F00;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/seidemann-ueber-uns.jpg");
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
