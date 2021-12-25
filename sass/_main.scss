@@ -67,8 +67,7 @@ ul {
 
 .navbar {
     margin-top: -70px;
-    background-color: $primary-color;
-    border-bottom: 1px solid $grey-color;
+    background-color: #FFF;
     &.no-hero {
         margin-top: 0;
     }
@@ -77,13 +76,18 @@ ul {
     }
     button {
         &.navbar-toggler-icon {
-            color: #fff;
+            color: $primary-color;
         }
     }
     .navbar-nav {
         .nav-item {
+            border-bottom: 1px solid $primary-color;
+            text-align: center;
+            &:last-child {
+                border-bottom: none;
+            }
             .nav-link {
-                color: #fff;
+                color: $primary-color;
             }
         }
     }
@@ -122,6 +126,11 @@ ul {
     100% {opacity:1;}
 }
 
+.image-spacer {
+    img {
+        width: 100%;
+    }
+}
 
 .contact-img {
     width: 100%;
@@ -140,54 +149,15 @@ footer {
         &:hover {
             color: $highlighting-color;
         }
-        @include for-phone-only {
-            line-height: 3em;
+    }
+    @include for-phone-only {
+        ul {
+            list-style: none;
+            li {
+                border-top: 1px solid #FFF;
+            }
         }
     }
-}
-
-// accordion
-
-button {
-    border: none;
-}
-
-.accordion-service {
-  background-color: $secondary-color;
-  color: #FFF;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active-service, 
-.accordion-service:hover {
-  background-color: $secondary-color;
-}
-
-.accordion-service:after {
-  content: '\002B';
-  color: #FFF;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active-service:after {
-  content: "\2212";
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: $secondary-color;
-  color: #FFF;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
 }
 
 // call-to-action button
@@ -198,37 +168,28 @@ button {
     border-radius: 15px;
     &:hover {
         text-decoration: none;
-        box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.25);
+        background-color: #ff9213;
         color: #FFF!important;
     }
 }
 
 hr {
-    border-top: 1px solid #666;
+    border-top: 1px solid #FFF;
 }
 
 section {
-    &#services1,
-    &#services2 {
+    &#services {
         background-color: $primary-color;
         color: #FFF;
         h2 {
             color: #FFF;
         }
     }
-    &#services1 {
-
-    }
-    &#services2 {
-        hr {
-            border-top: 1px solid #fff!important;
-        }
-    }
     &#ueber-uns {
-        background-color: #fff;
-        color: $grey-color;
+        background-color: #999;
+        color: #FFF;
         h2 {
-            color: $grey-color;
+            color: #FFF;
         }
     }
     &#kontakt {
@@ -250,7 +211,7 @@ section {
 
 .parallax {
     @include for-tablet-portrait-up {
-        background-image: url("../images/seidemann-ueber-uns.jpg");
+        background-image: url("../images/andreas-seidemann-wirtschaftspruefung.jpg");
 
         /* Set a specific height */
         height: 500px; 
