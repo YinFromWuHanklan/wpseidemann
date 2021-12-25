@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap");
 .pt-60 {
   padding-top: 60px;
@@ -57,8 +56,7 @@ ul li {
 
 .navbar {
   margin-top: -70px;
-  background-color: #013061;
-  border-bottom: 1px solid #666;
+  background-color: #FFF;
 }
 .navbar.no-hero {
   margin-top: 0;
@@ -69,10 +67,17 @@ ul li {
   }
 }
 .navbar button.navbar-toggler-icon {
-  color: #fff;
+  color: #013061;
+}
+.navbar .navbar-nav .nav-item {
+  border-bottom: 1px solid #013061;
+  text-align: center;
+}
+.navbar .navbar-nav .nav-item:last-child {
+  border-bottom: none;
 }
 .navbar .navbar-nav .nav-item .nav-link {
-  color: #fff;
+  color: #013061;
 }
 
 .header {
@@ -130,51 +135,12 @@ footer a:hover {
   color: #EB7F00;
 }
 @media (max-width: 599px) {
-  footer a {
-    line-height: 3em;
+  footer ul {
+    list-style: none;
   }
-}
-
-button {
-  border: none;
-}
-
-.accordion-service {
-  background-color: #0F70B7;
-  color: #FFF;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active-service,
-.accordion-service:hover {
-  background-color: #0F70B7;
-}
-
-.accordion-service:after {
-  content: "+";
-  color: #FFF;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active-service:after {
-  content: "−";
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: #0F70B7;
-  color: #FFF;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  footer ul li {
+    border-top: 1px solid #FFF;
+  }
 }
 
 .cta-button {
@@ -185,30 +151,27 @@ button {
 }
 .cta-button:hover {
   text-decoration: none;
-  box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.25);
+  background-color: #ff9213;
   color: #FFF !important;
 }
 
 hr {
-  border-top: 1px solid #666;
+  border-top: 1px solid #FFF;
 }
 
-section#services1, section#services2 {
+section#services {
   background-color: #013061;
   color: #FFF;
 }
-section#services1 h2, section#services2 h2 {
+section#services h2 {
   color: #FFF;
 }
-section#services2 hr {
-  border-top: 1px solid #fff !important;
-}
 section#ueber-uns {
-  background-color: #fff;
-  color: #666;
+  background-color: #999;
+  color: #FFF;
 }
 section#ueber-uns h2 {
-  color: #666;
+  color: #FFF;
 }
 section#kontakt {
   background-color: #666;
