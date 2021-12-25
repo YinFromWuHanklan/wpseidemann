@@ -114,6 +114,10 @@ ul li {
     opacity: 1;
   }
 }
+.image-spacer img {
+  width: 100%;
+}
+
 .contact-img {
   width: 100%;
 }
@@ -189,7 +193,7 @@ section#kontakt a:hover {
 
 @media (min-width: 600px) {
   .parallax {
-    background-image: url("../images/seidemann-ueber-uns.jpg");
+    background-image: url("../images/AS_5.jpg");
     /* Set a specific height */
     height: 500px;
     /* Create the parallax scrolling effect */
