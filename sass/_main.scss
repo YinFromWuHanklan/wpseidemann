@@ -80,14 +80,16 @@ ul {
         }
     }
     .navbar-nav {
-        .nav-item {
-            border-bottom: 1px solid $primary-color;
-            text-align: center;
-            &:last-child {
-                border-bottom: none;
-            }
+        .nav-item {            
             .nav-link {
                 color: $primary-color;
+            }
+            @include for-phone-only {
+                border-bottom: 1px solid $primary-color;
+                text-align: center;
+                &:last-child {
+                    border-bottom: none;
+                }
             }
         }
     }
