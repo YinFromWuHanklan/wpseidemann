@@ -69,15 +69,17 @@ ul li {
 .navbar button.navbar-toggler-icon {
   color: #013061;
 }
-.navbar .navbar-nav .nav-item {
-  border-bottom: 1px solid #013061;
-  text-align: center;
-}
-.navbar .navbar-nav .nav-item:last-child {
-  border-bottom: none;
-}
 .navbar .navbar-nav .nav-item .nav-link {
   color: #013061;
+}
+@media (max-width: 599px) {
+  .navbar .navbar-nav .nav-item {
+    border-bottom: 1px solid #013061;
+    text-align: center;
+  }
+  .navbar .navbar-nav .nav-item:last-child {
+    border-bottom: none;
+  }
 }
 
 .header {
