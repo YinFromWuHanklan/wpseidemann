@@ -42,8 +42,8 @@ ul {
   padding-left: 20px;
 }
 ul li {
-  margin-top: 15px;
-  line-height: 1.4rem;
+  margin-top: 1rem;
+  line-height: 1.6rem;
 }
 
 .navbar {
@@ -111,11 +111,11 @@ ul li {
 section.intro .intro-text {
   color: #444;
 }
-section#services {
+section#services, section#partner {
   background-color: #013061;
   color: #FFF;
 }
-section#services h2 {
+section#services h2, section#partner h2 {
   color: #FFF;
 }
 section#ueber-uns {
@@ -210,16 +210,26 @@ hr {
 }
 
 @media (min-width: 600px) {
-  .parallax {
+  .parallax-1 {
     background-image: url("../images/andreas-seidemann-wirtschaftspruefung.jpg");
-    /* Set a specific height */
-    height: 500px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
+}
+
+@media (min-width: 600px) {
+  .parallax-2 {
+    background-image: url("../images/andreas-seidemann-wirtschaftspruefung-partner.jpg");
+  }
+}
+
+.parallax-1,
+.parallax-2 {
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

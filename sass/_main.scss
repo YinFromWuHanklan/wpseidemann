@@ -52,8 +52,8 @@ p {
 ul {
     padding-left: 20px;
     li {
-        margin-top: 15px;
-        line-height: 1.4rem;
+        margin-top: 1rem;
+        line-height: 1.6rem;
     }
 }
 
@@ -129,7 +129,8 @@ section {
             color: $text-dark;    
         }
     }
-    &#services {
+    &#services,
+    &#partner {
         background-color: $primary-color;
         color: #FFF;
         h2 {
@@ -236,18 +237,24 @@ hr {
 
 // parallax
 
-.parallax {
+.parallax-1 {
     @include for-tablet-portrait-up {
         background-image: url("../images/andreas-seidemann-wirtschaftspruefung.jpg");
-
-        /* Set a specific height */
-        height: 500px; 
-    
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
     }
+}
+.parallax-2 {
+    @include for-tablet-portrait-up {
+        background-image: url("../images/andreas-seidemann-wirtschaftspruefung-partner.jpg");
+    }
+}
+.parallax-1, 
+.parallax-2 {
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
