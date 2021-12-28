@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap");
-.pt-60 {
-  padding-top: 60px;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -16,14 +12,18 @@ h3 {
 }
 
 h1 {
-  font-size: 1.5em;
-  color: #FFF;
+  font-size: 1.8em;
+  line-height: 2.5rem;
+  color: #013061;
 }
-@media (max-width: 599px) {
-  h1 {
-    font-size: 18px;
-    line-height: 1.5em;
-  }
+
+h2 {
+  color: #013061;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
 }
 
 .legal h1 {
@@ -31,14 +31,6 @@ h1 {
 }
 .legal h3 {
   margin-top: 40px;
-}
-
-h2 {
-  color: #013061;
-}
-
-h3 {
-  font-size: 24px;
 }
 
 li,
@@ -50,8 +42,8 @@ ul {
   padding-left: 20px;
 }
 ul li {
-  margin-top: 15px;
-  line-height: 1.4em;
+  margin-top: 1rem;
+  line-height: 1.6rem;
 }
 
 .navbar {
@@ -100,11 +92,11 @@ ul li {
 }
 .header .header-text span {
   font-family: "Playfair Display", serif;
-  font-size: 3.5em;
+  font-size: 2.5rem;
 }
 @media (max-width: 599px) {
   .header .header-text span {
-    font-size: 24px;
+    font-size: 1.7rem;
   }
 }
 
@@ -116,17 +108,61 @@ ul li {
     opacity: 1;
   }
 }
-.image-spacer img {
-  width: 100%;
+section.intro .intro-text {
+  color: #444;
 }
-
-.contact-img {
+section#services, section#partner {
+  background-color: #013061;
+  color: #FFF;
+}
+section#services h2, section#partner h2 {
+  color: #FFF;
+}
+section#ueber-uns {
+  background-color: #999;
+  color: #FFF;
+}
+section#ueber-uns h2 {
+  color: #FFF;
+}
+section#ueber-uns .quote {
+  position: relative;
+}
+section#ueber-uns .quote i {
+  position: absolute;
+  color: #b9b9b9;
+  z-index: 1;
+  left: -1.2rem;
+  top: -2rem;
+}
+section#ueber-uns .quote p {
+  position: relative;
+  z-index: 5;
+}
+section#ueber-uns .quote p.quote-text {
+  font-style: italic;
+}
+section#kontakt {
+  background-color: #666;
+  color: #fff;
+}
+section#kontakt h2 {
+  color: #fff;
+}
+section#kontakt .contact-img {
   width: 100%;
+  box-shadow: 0px 2px 20px 3px #444;
 }
 @media (max-width: 599px) {
-  .contact-img {
+  section#kontakt .contact-img {
     width: 60%;
   }
+}
+section#kontakt a {
+  color: #fff;
+}
+section#kontakt a:hover {
+  color: #EB7F00;
 }
 
 footer {
@@ -165,45 +201,35 @@ hr {
   border-top: 1px solid #FFF;
 }
 
-section#services {
-  background-color: #013061;
-  color: #FFF;
+.image-spacer img {
+  width: 100%;
 }
-section#services h2 {
-  color: #FFF;
-}
-section#ueber-uns {
-  background-color: #999;
-  color: #FFF;
-}
-section#ueber-uns h2 {
-  color: #FFF;
-}
-section#kontakt {
-  background-color: #666;
-  color: #fff;
-}
-section#kontakt h2 {
-  color: #fff;
-}
-section#kontakt a {
-  color: #fff;
-}
-section#kontakt a:hover {
-  color: #EB7F00;
+
+.pt-60 {
+  padding-top: 60px;
 }
 
 @media (min-width: 600px) {
-  .parallax {
+  .parallax-1 {
     background-image: url("../images/andreas-seidemann-wirtschaftspruefung.jpg");
-    /* Set a specific height */
-    height: 500px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
+}
+
+@media (min-width: 600px) {
+  .parallax-2 {
+    background-image: url("../images/andreas-seidemann-wirtschaftspruefung-partner.jpg");
+  }
+}
+
+.parallax-1,
+.parallax-2 {
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
