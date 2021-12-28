@@ -109,13 +109,7 @@ ul li {
   }
 }
 section.intro .intro-text {
-  text-align: left;
   color: #444;
-}
-@media (max-width: 599px) {
-  section.intro .intro-text {
-    text-align: center;
-  }
 }
 section#services {
   background-color: #013061;
@@ -136,7 +130,17 @@ section#ueber-uns .quote {
 }
 section#ueber-uns .quote i {
   position: absolute;
-  z-index: 0;
+  color: #b9b9b9;
+  z-index: 1;
+  left: -1.2rem;
+  top: -2rem;
+}
+section#ueber-uns .quote p {
+  position: relative;
+  z-index: 5;
+}
+section#ueber-uns .quote p.quote-text {
+  font-style: italic;
 }
 section#kontakt {
   background-color: #666;
