@@ -147,6 +147,13 @@ section {
         h2 {
             color: #FFF;
         }
+        .quote {
+            position: relative;
+            i {
+                position: absolute;
+                z-index: 0;
+            }
+        }
     }
     &#kontakt {
         background-color: $grey-color;

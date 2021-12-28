@@ -131,6 +131,13 @@ section#ueber-uns {
 section#ueber-uns h2 {
   color: #FFF;
 }
+section#ueber-uns .quote {
+  position: relative;
+}
+section#ueber-uns .quote i {
+  position: absolute;
+  z-index: 0;
+}
 section#kontakt {
   background-color: #666;
   color: #fff;
