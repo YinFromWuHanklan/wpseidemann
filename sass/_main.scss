@@ -115,7 +115,7 @@ ul {
         animation: showup 3s;
         span {
             font-family: "Playfair Display", serif;
-            font-size: 3.5em;
+            font-size: 2.5em;
             @include for-phone-only {
                 font-size: 24px;
             }
@@ -126,6 +126,10 @@ ul {
 @keyframes showup {
     0% {opacity:0;}
     100% {opacity:1;}
+}
+
+.intro {
+
 }
 
 .image-spacer {

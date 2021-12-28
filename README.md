@@ -1,4 +1,4 @@
 # wpseidemann
 
 compile sass:
-'sass style.scss style.css'
+'sass sass/style.scss css/style.css'
