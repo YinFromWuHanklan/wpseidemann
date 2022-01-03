@@ -10,13 +10,11 @@ html {
     scroll-behavior: smooth;
 }
 
-// Fonts
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap');
 
 h1, 
 h2,
-h3 {
+h3,
+h4 {
     font-family: "Playfair Display", serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -34,13 +32,19 @@ h2 {
 h3 {
     font-size: 1.2rem;
 }
+h4 {
+    font-size: 1rem;
+}
 
 .legal {
     h1 {
         color: $primary-color;
     }
+    h2 {
+        margin-top: 3rem;
+    }
     h3 {
-        margin-top: 40px;
+        margin-top: 2rem;
     }
 }
 
@@ -145,7 +149,7 @@ section {
         }
         .quote {
             position: relative;
-            i {
+            .fa-quote-right {
                 position: absolute;
                 color: #b9b9b9;
                 z-index: 1;
@@ -258,3 +262,5 @@ hr {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
