@@ -20,6 +20,8 @@
     <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <!-- Cookie Banner -->
+    <link rel="stylesheet" href="cookie-banner-bottom.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
@@ -234,6 +236,22 @@
         </div>
     </footer>
 
+    <div id="cookie-banner"><div>
+        <span>Mit der Verwendung unserer Webseite erklären Sie sich mit den Datenschutzbedingungen einverstanden.</span> 
+        <a href="datenschutz.html">Mehr Informationen</a></div>
+       <span id="cookie-bannerCloser" onclick="document.cookie = 'hidecookie-banner=1;path=/';jQuery('#cookie-banner').slideUp()">&#10006;</span>
+      </div>
+      
+      <script>
+        if(document.cookie.indexOf('hidecookie-banner=1') != -1){
+            jQuery('#cookie-banner').hide();
+        }
+        else{
+            jQuery('#cookie-banner').prependTo('body');
+            jQuery('#cookie-bannerCloser').show();
+        }
+      </script>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -245,8 +263,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        
-    <script src="js/navbar_scroll.js"></script>
         
 </body>
 </html>
