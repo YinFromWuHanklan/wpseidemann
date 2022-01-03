@@ -136,7 +136,7 @@ section#ueber-uns h2 {
 section#ueber-uns .quote {
   position: relative;
 }
-section#ueber-uns .quote i {
+section#ueber-uns .quote .fa-quote-right {
   position: absolute;
   color: #b9b9b9;
   z-index: 1;
