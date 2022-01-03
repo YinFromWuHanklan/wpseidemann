@@ -5,7 +5,8 @@ html {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -26,11 +27,18 @@ h3 {
   font-size: 1.2rem;
 }
 
+h4 {
+  font-size: 1rem;
+}
+
 .legal h1 {
   color: #013061;
 }
+.legal h2 {
+  margin-top: 3rem;
+}
 .legal h3 {
-  margin-top: 40px;
+  margin-top: 2rem;
 }
 
 li,
