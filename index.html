@@ -236,21 +236,12 @@
         </div>
     </footer>
 
-    <div id="cookie-banner"><div>
-        <span>Mit der Verwendung unserer Webseite erklären Sie sich mit den Datenschutzbedingungen einverstanden.</span> 
-        <a href="datenschutz.html">Mehr Informationen</a></div>
-       <span id="cookie-bannerCloser" onclick="document.cookie = 'hidecookie-banner=1;path=/';jQuery('#cookie-banner').slideUp()">&#10006;</span>
-      </div>
-      
-      <script>
-        if(document.cookie.indexOf('hidecookie-banner=1') != -1){
-            jQuery('#cookie-banner').hide();
-        }
-        else{
-            jQuery('#cookie-banner').prependTo('body');
-            jQuery('#cookie-bannerCloser').show();
-        }
-      </script>
+    <div id="first" class="fixed-bottom container-fluid cookie-banner p-3">
+        Mit der Verwendung unserer Webseite erklären Sie sich mit den Datenschutzbedingungen einverstanden. <a href="datenschutz.html">Mehr erfahren</a>
+        <button id="toggle">Einverstanden</button>
+    </div>
+
+    <script src="js/cookie-banner.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
