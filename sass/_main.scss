@@ -264,3 +264,11 @@ hr {
 }
 
 
+.cookie-banner {
+    height: auto;
+    background-color: #FFF;
+    border-top: 1px solid rgba(159,159,159,.5);
+    a {
+        color: $highlighting-color;
+    }
+}
