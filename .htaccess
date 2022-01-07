@@ -1,11 +1,8 @@
-//Rewrite to www
-Options +FollowSymLinks
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^wpseidemann.de[nc]
-RewriteRule ^(.*)$ http://www.wpseidemann.de/$1 [r=301,nc]
+<IfModule mod_rewrite.c>
 
-//Prevent viewing of .htaccess file
-<Files .htaccess>
-order allow,deny
-deny from all
-</Files>
+RewriteEngine On
+
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L]
+
+</IfModule>
